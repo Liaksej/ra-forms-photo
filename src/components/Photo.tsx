@@ -24,8 +24,12 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   };
 
   return (
-    <div className="rel w-[300px] inline-block">
-      <IconButton className="abs" aria-label="delete" onClick={deleteHandler}>
+    <div className="relative w-[300px] inline-block">
+      <IconButton
+        className="absolute"
+        aria-label="delete"
+        onClick={deleteHandler}
+      >
         <Cancel color="disabled" />
       </IconButton>
       <img
