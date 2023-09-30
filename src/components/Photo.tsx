@@ -24,9 +24,9 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   };
 
   return (
-    <div className="relative w-[300px] inline-block">
+    <div className="relative inline-block">
       <IconButton
-        className="absolute"
+        className="absolute h-[40px] w-[40px] -right-5 -top-5"
         aria-label="delete"
         onClick={deleteHandler}
       >
