@@ -24,7 +24,7 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   };
 
   return (
-    <div className="relative inline-block">
+    <div className="relative w-[300px]">
       <IconButton
         className="absolute h-[40px] w-[40px] -right-5 -top-5"
         aria-label="delete"
@@ -36,7 +36,7 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
         src={photo.src}
         alt={photo.id}
         width="300"
-        className="w-[300px] h-auto"
+        className="object-scale-down"
       />
     </div>
   );
