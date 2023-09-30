@@ -8,14 +8,14 @@ interface State {
   photos:
     | {
         id: string;
-        src: string;
+        src?: string;
       }[]
     | [];
 }
 
 interface Action {
   type: "addPhoto" | "deletePhoto";
-  payload: { id: string; src: string };
+  payload: { id: string; src?: string };
 }
 
 const actions = {
@@ -28,7 +28,10 @@ function reducer(state: State, action: Action) {
     case actions.addPhoto:
       return { ...state, photos: [...state.photos, action.payload] };
     case actions.deletePhoto:
-      return { ...state };
+      return {
+        ...state,
+        photos: state.photos.filter((photo) => photo.id !== action.payload.id),
+      };
     default:
       return state;
   }
