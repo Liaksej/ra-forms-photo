@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+  top: -1.25rem;
+  right: -1.25rem;
 }
