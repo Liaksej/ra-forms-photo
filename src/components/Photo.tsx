@@ -1,5 +1,4 @@
-import { styled } from "@mui/material/styles";
-import { IconButton, Paper } from "@mui/material";
+import { IconButton } from "@mui/material";
 import Cancel from "@mui/icons-material/Cancel";
 import { Dispatch, MouseEvent } from "react";
 
@@ -24,9 +23,9 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   };
 
   return (
-    <div className="relative w-[300px]">
+    <div className="rel w-[300px]">
       <IconButton
-        className="absolute h-[40px] w-[40px] -right-5 -top-5"
+        className="abs h-[40px] w-[40px]"
         aria-label="delete"
         onClick={deleteHandler}
       >
@@ -36,7 +35,7 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
         src={photo.src}
         alt={photo.id}
         width="300"
-        className="object-scale-down"
+        className="mt-[-40px] object-scale-down"
       />
     </div>
   );
