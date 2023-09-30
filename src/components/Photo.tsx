@@ -33,7 +33,7 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
 
   return (
     <div>
-      <Image elevation={2} className="w-fit h-fit rel">
+      <Image elevation={2} className="rel">
         <IconButton className="abs" aria-label="delete" onClick={deleteHandler}>
           <Cancel color="disabled" />
         </IconButton>
