@@ -32,15 +32,15 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   };
 
   return (
-    <div className="relative">
-      <IconButton
-        className="absolute -right-5 -top-5"
-        aria-label="delete"
-        onClick={deleteHandler}
-      >
-        <Cancel color="disabled" />
-      </IconButton>
-      <Image elevation={2} className="w-fit h-fit">
+    <div>
+      <Image elevation={2} className="w-fit h-fit relative">
+        <IconButton
+          className="absolute -right-5 -top-5"
+          aria-label="delete"
+          onClick={deleteHandler}
+        >
+          <Cancel color="disabled" />
+        </IconButton>
         <img src={photo.src} alt={photo.id} width="300" />
       </Image>
     </div>
