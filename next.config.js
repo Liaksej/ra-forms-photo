@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: process.env.NODE_ENV === "production" ? "/ra-forms-photo" : "",
+  // basePath: process.env.NODE_ENV === "production" ? "/ra-forms-photo" : "",
 };
 
 module.exports = nextConfig;
