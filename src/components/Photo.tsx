@@ -34,7 +34,7 @@ export const Photo = ({ photo, dispatch }: PhotoProps) => {
   return (
     <div className="relative">
       <IconButton
-        className="absolute right-[-1.3rem] top-[-1.2rem]"
+        className="absolute right-0 top-0"
         aria-label="delete"
         onClick={deleteHandler}
       >
