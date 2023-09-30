@@ -9,5 +9,5 @@
 .abs {
   position: absolute;
   top: -1.25rem;
-  right: -1.25rem;
+  left: calc(300px - 1.25rem);
 }
